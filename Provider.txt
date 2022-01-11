@@ -1,0 +1,150 @@
+Provider :
+Provider State Management, which is recommended by Google a well, mainly provides you a central point to manage the state, and to write front end logic.
+
+
+Provider Components:
+
+There are three components related to this Provider State Management that we need to understand.
+
+1.ChangeNotifier.
+2.ChangeNotifierProvider
+3.Consumer
+
+
+-> For Every Screen of Flutter application, we make a central point for managing state which is called a ChangeNotifier, which is just an ordinary class that extends ChangeNotifier class.
+
+================================================
+add latest dependecy
+
+provider : any 
+
+==========================================================================
+07/01/2022
+
+ 
+
+                             : Unit Testing :
+
+ 
+ Categories of testing :
+ 
+ 1) Unit test : A unit test tests a single function , method or class.
+
+ 2) Widget test : A widget test in other ui frameworks refered to as component  test test a single a widget.
+
+ 3) Integration test : An integration test testas a complete app or large part of an app.
+
+
+ What is testing : 
+
+ 	 				A piece of code to automatically validate other code.
+
+ Why testing is important : 
+
+ 					The more features your app has , the harder it is to manually. 
+ 					Automated tests help ensure that your app performs correctly before you pubslih it ,
+ 					while retaining your features and bug fix velocity.
+
+ 		when you create a basic or small project then you dont need to perform testing but when your functionality increasing your you r not able do all testing manuallly you need a automated testig thats why testing is importamt
+==========================================================================
+
+10/01/2022
+
+Hero Animation with Marvel app. going to one page to another page using hero animation.
+
+=========================================================================
+
+AnimationController :->>> 
+
+Properties : Repeat 
+             Forward
+             Stop
+
+Widget : RotationTransition 
+
+
+Vsync :->>>
+
+SingleTickerProviderStateMixin :->>> it keeps the all the reocrd of clock.
+
+=========================================================================
+
+10/01/2022
+
+Mixin : Mixin is simply a class with no constructor.
+
+why mixin use ? wee are using mixin for reusin the code like inheritance.
+
+like using super class code into the sub classs.
+
+In inheritance we are using extends keyword like that in mixin we are using the with keyword.
+
+=========
+example.=
+=========
+
+ 
+class Student with Name , Age{
+  
+  void rollno(){}
+}
+class Teacher with Name  ,Age{
+  void subject() {}
+}
+
+mixin Name {
+  void name() {}
+}
+
+mixin Age{
+  void age() {}
+}
+=========================================================================
+
+10/01/2022
+
+
+Null Safety : Null Saftey makes your code safer and runs faster.
+
+---> In Null safety we have 2 operators ? and ! .
+                                        -------
+
+for example
+-----------
+using ? (question mark) :->
+
+ void main(){
+ int ? x;
+ print(x);
+ }
+------------------------ 
+
+void main(){
+	int? x; nullable variable
+	int y =x!;
+
+	print(y);
+}
+
+
+
+Dart Null Safety : Using Null Safety we are not using the unintialize variable.
+
+if trying to running progrm with null variale then the program give you gives you an error..
+
+
+For example 
+------------>
+
+void main () {
+	int x;
+	print(x);
+
+}
+	//this program gives you an error when null saftey is on if null saftey is off this program return null.	
+
+void main(){
+	int x=10;
+	print(x);
+}
+ Alwyas intialize a value in variable.
